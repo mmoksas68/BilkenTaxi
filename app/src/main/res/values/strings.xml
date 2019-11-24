@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BilkenTransportation</string>
+    <string name="feedback">Feedback</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_location_of_landmark">Map</string>
+    <string name="title_activity_show_vehicle">Map</string>
+
+</resources>

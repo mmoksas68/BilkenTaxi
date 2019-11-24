@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fatihpc.bilkentransportation.FeedbackAndReportActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e5ff7d">
+
+        <TextView
+            android:id="@+id/headingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="44dp"
+            android:background="#f4bd50"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:text="Feedback"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/subjectEditText"
+            android:layout_width="280dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="48dp"
+            android:background="@android:color/holo_orange_light"
+            android:ems="10"
+            android:hint="                       Subject"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/headingTextView"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/headingTextView"
+            app:layout_constraintTop_toBottomOf="@+id/headingTextView" />
+
+        <EditText
+            android:id="@+id/commentEditText"
+            android:layout_width="286dp"
+            android:layout_height="301dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="60dp"
+            android:background="@android:color/holo_orange_light"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="                    explanations"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="@+id/subjectEditText"
+            app:layout_constraintHorizontal_bias="0.785"
+            app:layout_constraintStart_toStartOf="@+id/subjectEditText"
+            app:layout_constraintTop_toBottomOf="@+id/subjectEditText" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="sendFeedbackOrReport"
+            android:text="send"
+            app:layout_constraintEnd_toEndOf="@+id/commentEditText"
+            app:layout_constraintTop_toBottomOf="@+id/commentEditText" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu"></android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

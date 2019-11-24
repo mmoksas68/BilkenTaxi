@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fatihpc.bilkentransportation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".StarterApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.parse.SERVER_URL"
+            android:value="http://18.219.35.104:80/parse" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="ce10c9ab74f5dc0998d2d20e2ce0cd8893b6159c" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="4fcbe80f379a2b758d60374026392b436463fb85" />
+
+        <activity android:name=".SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StarterApplication" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".MyProfileActivity" />
+        <activity android:name=".FeedbackAndReportActivity" />
+        <activity android:name=".SearchProfileActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".CommentActivity" />
+        <activity android:name=".BilkentLandmarksActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".LocationOfLandmarkActivity"
+            android:label="@string/title_activity_location_of_landmark" />
+        <activity android:name=".InformationActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity
+            android:name=".ShowVehicleActivity"
+            android:label="@string/title_activity_show_vehicle" />
+        <activity android:name=".MakeRequestActivity" />
+        <activity android:name=".NewRequestActivity" />
+        <activity android:name=".WaitingForResponseActivity" />
+        <activity android:name=".ConfirmationActivity" />
+        <activity android:name=".DenyActivity" />
+    </application>
+
+</manifest>

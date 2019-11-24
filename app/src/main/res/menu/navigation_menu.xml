@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_my_profile"
+        android:title="My Profile" >
+    </item>
+
+    <item
+        android:id="@+id/nav_show_vehicle"
+        android:title="Show Vehicle" >
+    </item>
+
+    <item
+        android:id="@+id/nav_landmarks"
+        android:title="Bilkent Landmarks" >
+    </item>
+
+    <item
+        android:id="@+id/nav_search_profiles"
+        android:title="Search Profiles" >
+    </item>
+
+    <item
+        android:id="@+id/nav_feedback"
+        android:title="Feedback" >
+    </item>
+
+    <item
+        android:id="@+id/nav_log_out"
+        android:title="Log Out" >
+    </item>
+
+</menu>
